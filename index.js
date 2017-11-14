@@ -20,3 +20,7 @@ function destructivelyRemoveFirstDriver(){
 function appendDriver(name){
   return [...drivers,name];
 }
+//prepends a driver to the drivers array and returns a new array, leaving the drivers array unchanged
+function prependDriver(name){
+  return [name,...drivers];
+}
